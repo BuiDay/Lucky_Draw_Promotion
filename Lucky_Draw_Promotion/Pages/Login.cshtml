@@ -1,0 +1,42 @@
+﻿@page
+@model Lucky_Draw_Promotion.Pages.LoginModel
+@{
+}
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="~/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<div class="container">
+	<h3>Login</h3>
+	<form method="post">
+		<div class="form-control">
+			<input type="text" asp-for="Model.Email">
+			@*<label asp-for="Model.Email"></label>*@
+			<i class="fas fa-user icon"></i>
+			<span asp-validation-for="Model.Email" style="color:red"></span>
+		</div>
+		<div class="form-control">
+			<input type="password" asp-for="Model.Password">
+			@*<label asp-for="Model.Password"></label>*@
+			<i class="icon fas fa-key"></i>
+			<span asp-validation-for="Model.Password" style="color:red"></span>
+		</div>
+
+		<div class="form-control">
+			<div class="g-recaptcha" data-sitekey="6LdzbqQeAAAAAOuZnZXp-bA_bwr_uhhQzvPupUsn"></div>
+		</div>
+
+		<div class="mb-3">
+			<button type="submit" class="btn">Login</button>
+		</div>
+
+		<div asp-validation-summary="All" style="color:red"></div>
+
+	</form>
+	<p class="text"><a asp-page="./ForgotPassword">Forgot Password?</a></p>
+</div>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto, sans-serif;
+    background-color: steelblue;
+    color: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    overflow: hidden;
+    font-weight: bold;
+}
+.container{
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 5px;    
+}
+.container h3{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+.container a{
+    text-decoration: none;
+    color:lightblue;
+}
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+    
+}
+
+.icon{
+    position: absolute;
+    font-size: 23px;
+    top: -5px;
+}
+.form-control input {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px #fff solid;
+    padding-left: 30px;
+    padding-bottom: 2px;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    color:#fff;
+}
+
+.form-control input:focus,
+.form-control input:valid{
+    outline:0;
+}
+.btn{
+    cursor: pointer;
+    width: 100%;
+    padding:15px;
+    background: lightblue;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+}
+.btn:focus{
+    outline:0;
+}
+.btn:active{
+    transform: scale(0.9);
+}
+.text{
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
